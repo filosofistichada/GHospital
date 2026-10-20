@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Doctor">
+  <circle cx="32" cy="32" r="30" fill="#0284c7"/>
+  <path d="M14 58 q0 -16 18 -16 q18 0 18 16 z" fill="#fff"/>
+  <circle cx="32" cy="28" r="11" fill="#e0ac69"/>
+  <rect x="22" y="12" width="20" height="8" rx="3" fill="#fff"/>
+  <path d="M30 14 h4 v-0 M32 12.5 v6 M29 15.5 h6" stroke="#d62828" stroke-width="2"/>
+  <path d="M24 44 v6 a6 6 0 0 0 12 0 v-2" fill="none" stroke="#2b1d0e" stroke-width="2"/>
+  <circle cx="36" cy="47" r="2.5" fill="#2b1d0e"/>
+</svg>

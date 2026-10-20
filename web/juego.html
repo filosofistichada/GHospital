@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virus del Sueño</title>
+  <link rel="icon" href="img/coste.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <h1>Virus del Sueño <small>el juego de cartas del Hospital de los Costeños</small></h1>
+    <nav aria-label="Páginas">
+      <a href="index.html">Hospital</a>
+      <a href="juego.html" aria-current="page">Virus del Sueño</a>
+    </nav>
+    <button id="boton-sonido" class="secundario chico" type="button">🔊 Con sonido</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="inicio-juego panel">
+      <img src="img/coste.svg" alt="El Coste, el Paciente Cero">
+      <h2>¿Quién aguanta despierto?</h2>
+      <p>Gana el primero con <strong>4 pacientes sanos</strong> de equipos distintos (el comodín vale por cualquiera).
+        Ataques de sueño a los rivales, camas a los tuyos, y cuidado con el Coste.</p>
+      <form id="form-inicio">
+        <label for="nombre">Tu nombre</label>
+        <input id="nombre" type="text" value="Sofía" maxlength="30" autocomplete="off">
+        <label>¿Contra cuántos bots?</label>
+        <div class="opciones-bots">
+          <label><input type="radio" name="bots" value="1"> 1</label>
+          <label><input type="radio" name="bots" value="2" checked> 2</label>
+          <label><input type="radio" name="bots" value="3"> 3</label>
+        </div>
+        <p><button type="submit">¡A jugar!</button></p>
+      </form>
+    </section>
+
+    <section id="mesa" hidden>
+      <div id="rivales" class="rivales"></div>
+      <p id="instruccion" class="instruccion" aria-live="polite"></p>
+      <div id="mi-tablero"></div>
+      <div id="mano" class="mano" aria-label="Tu mano"></div>
+      <div class="barra-acciones">
+        <button id="boton-descartar" type="button" class="secundario">Descartar cartas</button>
+        <button id="boton-confirmar" type="button" hidden>Botar las elegidas</button>
+        <button id="boton-cancelar" type="button" class="secundario" hidden>Cancelar</button>
+        <button id="boton-nueva" type="button" class="peligro">Nueva partida</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="victoria" class="victoria" hidden>
+    <div class="panel">
+      <img src="img/estrella.svg" alt="" width="90">
+      <h2 id="texto-victoria"></h2>
+      <p>Que suene el picó.</p>
+      <button id="boton-otra" type="button">Otra partida</button>
+    </div>
+  </div>
+
+  <div id="avisos" class="avisos" aria-live="polite"></div>
+  <script type="module" src="js/juego.js"></script>
+</body>
+</html>

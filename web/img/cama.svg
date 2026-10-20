@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hamaca">
+  <circle cx="32" cy="32" r="30" fill="#0d9488"/>
+  <path d="M10 18 v34 M54 18 v34" stroke="#7c2d12" stroke-width="4" stroke-linecap="round"/>
+  <path d="M10 22 q22 30 44 0" fill="#fde047" stroke="#7c2d12" stroke-width="2"/>
+  <path d="M14 26 q18 22 36 0" fill="none" stroke="#d62828" stroke-width="3"/>
+  <path d="M18 29 q14 16 28 0" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+</svg>

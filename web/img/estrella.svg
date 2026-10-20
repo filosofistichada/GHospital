@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Selección Colombia, comodín">
+  <defs>
+    <linearGradient id="tricolor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.5" stop-color="#facc15"/><stop offset="0.5" stop-color="#1d4ed8"/>
+      <stop offset="0.75" stop-color="#1d4ed8"/><stop offset="0.75" stop-color="#d62828"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#tricolor)"/>
+  <path d="M32 10 l6.5 13.5 14.5 2 -10.5 10 2.5 14.5 -13 -7 -13 7 2.5 -14.5 -10.5 -10 14.5 -2 z" fill="#fff" stroke="#2b1d0e" stroke-width="2" stroke-linejoin="round"/>
+</svg>

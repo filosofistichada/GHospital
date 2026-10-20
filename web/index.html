@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospital de los Costeños</title>
+  <link rel="icon" href="img/tiburon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <h1>Hospital de los Costeños con Narcolepsia <small>edición "Virus del Sueño"</small></h1>
+    <nav aria-label="Páginas">
+      <a href="index.html" aria-current="page">Hospital</a>
+      <a href="juego.html">Virus del Sueño</a>
+    </nav>
+    <button id="boton-sonido" class="secundario chico" type="button">🔊 Con sonido</button>
+    <button id="boton-reiniciar" class="peligro chico" type="button">Reiniciar escenario</button>
+  </header>
+
+  <main>
+    <section class="tablero-hospital" aria-label="Tablero del hospital">
+      <div class="zona">
+        <h2>Sala de espera <span class="pista">despiertos, por ahora</span></h2>
+        <div id="zona-espera" class="fila-cartas"></div>
+      </div>
+      <div class="zona">
+        <h2>Pasillo <span class="pista">dormidos sin cama (PacientesEnPasillo)</span></h2>
+        <div id="zona-pasillo" class="fila-cartas"></div>
+      </div>
+      <div class="zona ancho-completo">
+        <h2>Habitaciones</h2>
+        <div id="zona-habitaciones" class="habitaciones"></div>
+      </div>
+      <div class="zona ancho-completo">
+        <h2>Personal de turno <span class="pista">[]Atendedor: el hospital despacha por turno rotativo sin saber quién es quién</span></h2>
+        <div id="zona-personal" class="fila-cartas"></div>
+      </div>
+    </section>
+
+    <h2>Las cuatro consultas</h2>
+    <section class="consultas">
+      <article class="panel">
+        <h3>1. Pacientes dormidos en el pasillo</h3>
+        <p class="metodo">func (h *Hospital) PacientesEnPasillo() []*Paciente</p>
+        <ul id="consulta-pasillo"></ul>
+      </article>
+      <article class="panel">
+        <h3>2. Episodios por doctor</h3>
+        <p class="metodo">func (d *Doctor) MisEpisodios() []RegistroEpisodio</p>
+        <div id="consulta-episodios"></div>
+      </article>
+      <article class="panel">
+        <h3>3. Disponibilidad de camas</h3>
+        <p class="metodo">func (h *Hospital) AsignarHabitacion(p *Paciente) (*Habitacion, error)</p>
+        <ul id="consulta-camas"></ul>
+        <p id="ultima-asignacion" class="dato"></p>
+      </article>
+      <article class="panel">
+        <h3>4. Reporte de severos</h3>
+        <p class="metodo">func (h *Hospital) ReporteSeveros() map[*Paciente]int</p>
+        <ul id="consulta-severos"></ul>
+      </article>
+    </section>
+
+    <section class="zona" style="margin-top:18px">
+      <h2>Historial del hospital <span class="pista">RegistroEpisodio.Resumen()</span></h2>
+      <ul id="historial" class="historial"></ul>
+    </section>
+  </main>
+
+  <div id="avisos" class="avisos" aria-live="polite"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

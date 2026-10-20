@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Picó a todo volumen">
+  <circle cx="32" cy="32" r="30" fill="#db2777"/>
+  <rect x="17" y="14" width="30" height="38" rx="4" fill="#2b1d0e"/>
+  <circle cx="32" cy="38" r="9" fill="#facc15"/><circle cx="32" cy="38" r="3.5" fill="#2b1d0e"/>
+  <circle cx="32" cy="22" r="4" fill="#facc15"/>
+  <path d="M50 18 q4 4 0 8 M54 14 q7 8 0 16" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M10 22 l-2 8 M10 22 l5 -1 v6" fill="none" stroke="#fff" stroke-width="2"/>
+</svg>

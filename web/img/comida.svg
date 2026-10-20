@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Plato de sancocho">
+  <circle cx="32" cy="32" r="30" fill="#f97316"/>
+  <path d="M10 34 h44 a22 16 0 0 1 -44 0 z" fill="#fff7e6" stroke="#7c2d12" stroke-width="2"/>
+  <ellipse cx="32" cy="34" rx="22" ry="5" fill="#fbbf24" stroke="#7c2d12" stroke-width="2"/>
+  <circle cx="26" cy="33" r="3" fill="#a3e635"/><circle cx="36" cy="34" r="3.5" fill="#fde68a"/>
+  <path d="M24 26 q-3 -5 0 -9 M32 25 q-3 -5 0 -10 M40 26 q-3 -5 0 -9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="46" y="20" font-family="sans-serif" font-size="10" font-weight="bold" fill="#fff">z</text>
+  <text x="51" y="14" font-family="sans-serif" font-size="8" font-weight="bold" fill="#fff">z</text>
+</svg>
