@@ -1,7 +1,7 @@
 # Hospital de los Costeños con Narcolepsia — edición "Virus del Sueño"
 
-**Autora:** Sofía [COMPLETAR: apellido] (trabajo individual)
-**Curso:** Programación Orientada a Objetos — Universidad EIA, profesor Sebastián Zapata Ramírez
+**Autora:** Sofía Soto Guerrero
+**Curso:** Lenguajes y Compiladores — Universidad EIA, profesor Sebastián Zapata Ramírez
 
 Sistema de gestión de un hospital costeño cuyos pacientes se quedan dormidos en cualquier parte,
 escrito en Go con solo la librería estándar. El modelo usa structs con campos no exportados,
